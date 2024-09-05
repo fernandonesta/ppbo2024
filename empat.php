@@ -23,8 +23,8 @@ class Book
     public $category;
     public $language;
     public $numberOfPage;
-    public $author;
-    public $publisher;
+    public $author; // Object of Author
+    public $publisher; // Object of Publisher
 
     public function __construct($ISBN, $title, $description, $category, $language, $numberOfPage, $author, $publisher) {
         $this->ISBN = $ISBN;
@@ -45,8 +45,8 @@ class Book
                "Category: {$this->category}\n" .
                "Language: {$this->language}\n" .
                "Number of Pages: {$this->numberOfPage}\n" .
-               "Author: {$this->author}\n" .
-               "Publisher: {$this->publisher}";
+               "Author: {$this->author->getAuthorInfo()}\n" . // Memanggil getAuthorInfo() untuk mendapatkan informasi penulis
+               "Publisher: {$this->publisher->getPublisherInfo()}"; // Memanggil getPublisherInfo() untuk mendapatkan informasi penerbit
     }
 
     // Getter dan Setter untuk ISBN
@@ -151,3 +151,12 @@ class Publisher{
     }
 
 }
+
+// Contoh penggunaan
+$author = new Author("Morgan Housel", "The Psychology of Money.");
+$publisher = new Publisher("Harriman House", "Bedford Road", "+44(0)1732 233870");
+$book = new Book("9781804090114", "The Psychology of Money", "A collection of short stories exploring the strange ways people think about money.", "self-development", "English - Indonesia", 268, $author, $publisher);
+
+echo $book->getBookInfo();
+
+?>
