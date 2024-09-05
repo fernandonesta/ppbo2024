@@ -23,8 +23,8 @@ class Book
     public $category;
     public $language;
     public $numberOfPage;
-    public $author; // Object of Author
-    public $publisher; // Object of Publisher
+    public $author;
+    public $publisher;
 
     public function __construct($ISBN, $title, $description, $category, $language, $numberOfPage, $author, $publisher) {
         $this->ISBN = $ISBN;
@@ -45,8 +45,8 @@ class Book
                "Category: {$this->category}\n" .
                "Language: {$this->language}\n" .
                "Number of Pages: {$this->numberOfPage}\n" .
-               "Author: {$this->author->getAuthorInfo()}\n" . // Memanggil getAuthorInfo() untuk mendapatkan informasi penulis
-               "Publisher: {$this->publisher->getPublisherInfo()}"; // Memanggil getPublisherInfo() untuk mendapatkan informasi penerbit
+               "Author: {$this->author->getAuthorInfo()}\n" .
+               "Publisher: {$this->publisher->getPublisherInfo()}";
     }
 
     // Getter dan Setter untuk ISBN
