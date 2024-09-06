@@ -14,3 +14,4 @@ class Author
         return "Author: {$this->name}, About: {$this->description}";
     }
 }
+?>
