@@ -1,0 +1,17 @@
+{
+    "name": "fernandonesta/ppbo2024",
+    "description": "Merupakan package untuk latihan pemrograman berorientasi objek",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fernandonesta",
+            "email": "fernestadianto@student.untan.ac.id"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "App\\":"App"
+        }
+    }
+}
