@@ -1,5 +1,6 @@
 <?php
 namespace Guest\Model\Shape;
+
 class Lingkaran
 {
     const PHI = 3.14;

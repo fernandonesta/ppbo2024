@@ -1,5 +1,6 @@
 <?php
 namespace Guest\Model\Pustaka;
+
 class Book
 {
     public $ISBN;

@@ -1,5 +1,6 @@
 <?php
 namespace Guest\Model\Shape;
+
 class Bola
 {
     const PHI = 3.14;

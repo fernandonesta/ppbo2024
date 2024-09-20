@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Guest\Model\Akademik;
 
 class Dosen extends Pegawai {

@@ -1,5 +1,6 @@
 <?php
 namespace Guest\Model\Pustaka;
+
 class Publisher{
     public $name;
     public $address;
