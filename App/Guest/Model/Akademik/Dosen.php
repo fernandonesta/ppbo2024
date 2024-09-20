@@ -1,7 +1,7 @@
 <?php
 
-
 namespace Guest\Model\Akademik;
+use App\Model\Akademik\Pegawai;
 
 class Dosen extends Pegawai {
     public $nidn;

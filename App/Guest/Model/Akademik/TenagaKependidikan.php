@@ -1,7 +1,7 @@
 <?php
 
-
 namespace Guest\Model\Akademik;
+use App\Model\Akademik\Pegawai;
 
 class TenagaKependidikan extends Pegawai {
     public $gaji_pokok;
