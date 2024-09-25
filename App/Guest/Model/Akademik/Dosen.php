@@ -3,7 +3,6 @@
 namespace App\Model\Akademik;
 
 use App\Model\Akademik\Pegawai;
-
 /**
  * Class Dosen
  *
